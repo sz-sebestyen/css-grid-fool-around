@@ -8,6 +8,8 @@
 
 :root {
 	font-size: 16px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 400;
 }
 
 #root {
@@ -28,22 +30,46 @@
 	border: 1px dashed black;
 }
 
+*::before {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-size: 2em;
+	color: wheat;
+}
+
 .header {
 	grid-area: header;
+}
+.header::before {
+	content: "header";
 }
 
 .nav {
 	grid-area: nav;
 }
+.nav::before {
+	content: "nav";
+}
 
 .main {
 	grid-area: main;
+}
+.main::before {
+	content: "main";
 }
 
 .aside {
 	grid-area: aside;
 }
+.aside::before {
+	content: "aside";
+}
 
 .footer {
 	grid-area: footer;
+}
+.footer::before {
+	content: "footer";
 }
