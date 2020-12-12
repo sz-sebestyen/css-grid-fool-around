@@ -12,10 +12,38 @@
 
 #root {
 	display: grid;
+	grid-template-columns: 80px auto 200px;
+	grid-template-rows: 60px 100vh 400px;
+	grid-template-areas: 
+	"header header header"
+	"nav    main   aside"
+	"footer footer footer";
 	background-color: #999;
 	padding: 5px;
 }
 
 .grid-item {
 	background-color: #333;
+	padding: 10px;
+	border: 1px dashed black;
+}
+
+.header {
+	grid-area: header;
+}
+
+.nav {
+	grid-area: nav;
+}
+
+.main {
+	grid-area: main;
+}
+
+.aside {
+	grid-area: aside;
+}
+
+.footer {
+	grid-area: footer;
 }
