@@ -14,8 +14,8 @@
 
 #root {
 	display: grid;
-	grid-template-columns: 80px auto 200px;
-	grid-template-rows: 60px 100vh 400px;
+	grid-template-columns: [nav-col-start] 80px [nav-col-end main-col-start] auto [main-col-end aside-col-start] 200px [aside-col-end];
+	grid-template-rows: [header-row-start] 60px [header-row-end main-row-start] 100vh [main-row-end footer-row-start] 400px [footer-row-end];
 	grid-template-areas: 
 	"header header header"
 	"nav    main   aside"
