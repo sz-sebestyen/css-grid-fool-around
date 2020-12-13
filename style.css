@@ -53,6 +53,8 @@
 
 .header {
 	grid-area: header;
+	z-index: 1;
+	opacity: 0.5;
 }
 .header::before {
 	content: "header";
@@ -66,7 +68,10 @@
 }
 
 .main {
-	grid-area: main;
+	/*grid-area: main;*/
+	grid-row: header-row-start / main-row-end;
+	grid-column: main-col-start / main-col-end;
+	background-color: brown;
 }
 .main::before {
 	content: "main";
