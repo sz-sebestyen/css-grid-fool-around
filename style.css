@@ -79,6 +79,7 @@
 
 .aside {
 	grid-area: aside;
+	background-color: #123;
 }
 .aside::before {
 	content: "aside";
@@ -86,6 +87,7 @@
 
 .footer {
 	grid-area: footer;
+	background-color: #123123;
 }
 .footer::before {
 	content: "footer";
